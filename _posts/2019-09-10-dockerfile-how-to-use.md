@@ -31,6 +31,7 @@ Docker에 개발환경을 구성하기 위해서는, 우선적으로 Docker 명�
 1. MAINTAINER.
 
 - Dockerfile의 작성자 정보를 작성한다. 형식은 자유이고, 보통은 이름과 이메일을 입력한다.
-'''
+
+```
 MAINTAINER Hong, Gildong <gd@yuldo.com>
-'''
+```
