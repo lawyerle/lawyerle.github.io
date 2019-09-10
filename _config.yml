@@ -1,8 +1,8 @@
 # SITE CONFIGURATION
-baseurl: "/Type-on-Strap"
-url: "https://sylhare.github.io"
-title: Type on Strap # site's title
-description: "A website with blog posts and pages" # used by search engines
+baseurl: "/"
+url: "https://lawyerle.github.io"
+title: 소소한 IT & OpenSource 이야기 # site's title
+description: "Sharing IT & opensource knowledge" # used by search engines
 
 defaults:
   - scope:
@@ -35,7 +35,7 @@ theme_settings:
   facebook:
   flickr:
   gitlab:
-  github: "sylhare"
+  github: "lawyerle"
   instagram:
   keybase:
   linkedin:  # Full URL
