@@ -32,8 +32,30 @@ Docker에 개발환경을 구성하기 위해서는, 우선적으로 Docker 명�
 
     * Dockerfile의 작성자 정보를 작성한다. 형식은 자유이고, 보통은 이름과 이메일을 입력한다.
 
-```dockerfile
+    ```dockerfile
     MAINTAINER Hong, Gildong <gd@yuldo.com>
-```
+    ```
 
 3. RUN.
+    * dockerfile에서 RUN 명령은 워낙 처음에 나오는 명령이라, '이정도는 알고 있지'라고 생각했는데, shell 상에서 실행시키는 방법과 shell 없이 실행시키는 방법 2가지가 있다고 한다.
+    * RUN으로 실행된 결과는 캐싱되며, 다음 빌드(Build)시에 캐싱된 결과를 사용하지 않으려면 ```docker build```명령에서 --no-cache 옵션을 사용하면 된다.
+
+    * 쉘(/bin/sh)로 명령 실행하기
+        쉘스크립트 구문을 사용가능
+
+    ```dockerfile
+    RUN apt-get install -y nginx
+    RUN echo "Hello Docker" > /tmp/hello
+    RUN curl -ssl https://golang.org/dl/go1.3.1.src.tar.gz | tar -v -C /usr/local -xz
+    RUN git clone https://github.com/docker/docker.git
+    ```
+
+    * 쉘없이 바로 실행하기
+        쉘스크립트 문법과 관련된 문자를 그대로 실행파일에 넘겨주는 것이 가능
+
+    ```dockerfile
+    RUN ["apt-get", "install", "-y", "nginx"]
+    RUN ["/usr/local/bin/hello", "--help"]
+    ```
+
+4. CMD.
