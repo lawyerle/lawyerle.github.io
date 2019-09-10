@@ -25,6 +25,7 @@ Docker에 개발환경을 구성하기 위해서는, 우선적으로 Docker 명�
 우선 내가 이 포스트를 작성하면서 참고한 글의 링크는 아래와 같다.(<http://longbe00.blogspot.com/2015/03/dockerfile.html)>
 
 1. Dockerfile의 기본 명령어는 모두 대문자..
+1. Test
 
 FROM, COPY, RUN 등 Dockerfile 작성시에 사용하는 명령어는 모두 대문자를 사용한다.
 
