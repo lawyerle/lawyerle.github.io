@@ -14,7 +14,7 @@ Docker에 개발환경을 구성하기 위해서는, 우선적으로 Docker 명�
 
 그리고 Docker와 Kubernetes의 명령은 닮은 듯하면서도 상이한 부분이 많아서, 아직도 kubernetes에서 docker의 파라미터를 입력하는 경우가 허다하다. 하지만, 내 머리탓은 절대하지 않고, 나이탓이라고 자조하고 있는 중이다.
 
-## Dockefile 문법을 정리해 보자..
+## Dockefile 문법을 정리해 보자
 
 "그동안 무엇을 공부했던 거지?"
 
@@ -27,3 +27,5 @@ Docker에 개발환경을 구성하기 위해서는, 우선적으로 Docker 명�
 1. Dockerfile의 기본 명령어는 모두 대문자..
 
 - FROM, COPY, RUN 등 Dockerfile 작성시에 사용하는 명령어는 모두 대문자를 사용한다.
+
+2. 
