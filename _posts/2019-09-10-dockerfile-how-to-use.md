@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Dockerfile 문법, 내가 놓치고 있던 것들...
+color: brown
 tags: [Docker, Container]
 ---
 
