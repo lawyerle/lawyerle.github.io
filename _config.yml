@@ -1,7 +1,7 @@
 # SITE CONFIGURATION
 baseurl: "/"
 url: "https://lawyerle.github.io"
-title: 소소한 IT & OpenSource 이야기 # site's title
+title: 비전공 개발자의 IT 이야기 # site's title
 description: "Sharing IT & opensource knowledge" # used by search engines
 
 defaults:
@@ -18,7 +18,7 @@ theme_settings:
   favicon: assets/favicon.ico
 
   # Header and footer text
-  header_text: Change header text in <code>_config.yml</code>
+  header_text: 소소한 IT & OpenSource 이야기
   header_feature_image: assets/img/pexels/triangular.jpeg
   footer_text: >
     Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
